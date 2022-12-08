@@ -3,9 +3,10 @@ import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 
 const Restaurant = ({ item }) => {
-  return (
+  
+    return (
     <Link style={{textDecoration :'none'}} to={`${item.id}`}>
-        <Card className="my-3 p-3 rounded" style={{ width: "18rem", height: "500px" }}>
+        <Card className="my-3 p-3 rounded" style={{  height: "500px" }}>
           <Card.Img
             // variant="top"
             src={item.photograph1}

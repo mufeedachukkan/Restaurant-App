@@ -1,10 +1,16 @@
 import React from 'react';
 
-function Review() {
+function Review({data}) {
     
   return (
     <div>
-      <p>dnbhj</p>
+      {data.map(item=>(
+        <div>
+          <h6>{item.name}</h6>
+          <p>{item.date}</p>
+          <p>{item.comments}</p>
+        </div>
+      ))}
     </div>
   );
 }
